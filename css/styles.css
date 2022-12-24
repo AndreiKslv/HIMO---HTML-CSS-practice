@@ -1,0 +1,550 @@
+@import "fonts.css";
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    font-family: Inter, serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #131313;
+}
+
+/* 1. HEADER */
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px 0;
+    margin: 0 auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    margin: 0 73px 0 0;
+}
+.menu__list {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu__link {
+    padding: 40px 20px;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: #131313;
+
+    transition: all 0.3s;
+}
+
+.menu__item {
+    display: flex;
+}
+
+.menu__link:hover {
+    background-color: #131313;
+    color: #fff;
+}
+
+.menu__item + .menu__item {
+    margin-left: 10px;
+}
+
+/* 2. SECTION / 2. BIKE */
+
+.bike {
+    margin: 100px 0 125px;
+}
+
+.bike__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bike__column + .bike__column {
+    flex-basis: 630px;
+    max-width: 630px;
+    margin-left: 31px;
+}
+
+.bike__title {
+    margin: 70px 0 5px;
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+.bike__subtitle {
+    margin-bottom: 70px;
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #6f6f6f;
+}
+
+.bike__text {
+    max-width: 420px;
+    margin-bottom: 20px;
+}
+
+.bike__text + .bike__text {
+    margin-bottom: 80px;
+}
+
+.btn-order {
+    display: inline-block;
+    padding: 28px 60px 28px 81px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    color: #fff;
+
+    background-color: #131313;
+    transition: all 0.3s;
+}
+
+.btn-order:hover {
+    background-color: #ff4040;
+}
+
+/* JS */
+
+.slider .slick-dots {
+    right: 0;
+    top: 52px;
+}
+
+.slick-dots {
+    position: absolute;
+}
+
+.slick-dots li + li {
+    margin-top: 10px;
+}
+
+.slick-dots button {
+    width: 2px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    border-radius: 7px;
+
+    font-size: 0;
+
+    background-color: #131313;
+    cursor: pointer;
+
+    transition: all 0.3s;
+}
+
+.slick-dots button:hover,
+.slick-active button {
+    background-color: #ff4040;
+}
+
+.parameters {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+.parameters__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 160px;
+    min-height: 58px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.parameters__name {
+    margin: auto 0;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+}
+
+/* 3. SECTION /  */
+
+.info {
+    padding-top: 25px;
+    margin-bottom: 150px;
+}
+
+.info__inner {
+    display: flex;
+}
+
+.info__img {
+    flex-basis: 570px;
+    margin-right: 60px;
+
+    object-fit: cover;
+}
+
+.info__title {
+    margin: 0 0 10px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.info__paragraphs {
+    flex-basis: 490px;
+}
+
+.info__item + .info__item {
+    padding-top: 50px;
+}
+
+.info__text {
+    max-width: 450px;
+}
+
+/* 3. SECTION / 3. CHARACTERISTICS */
+
+.char {
+    margin-bottom: 150px;
+}
+
+.char__inner {
+    display: flex;
+}
+
+.char__header {
+    margin: 0 0 40px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.char__info {
+    margin-right: 60px;
+}
+
+.char__info,
+.char__img {
+    flex-basis: 570px;
+}
+
+.char__item + .char__item {
+    margin-top: 32px;
+}
+
+.char__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #fff;
+
+    background-color: #131313;
+}
+
+.char__name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.char__name + .char__name {
+    margin-top: 5px;
+}
+
+.char__descr {
+    flex-basis: 285px;
+    max-width: 285px;
+
+    word-wrap: break-word;
+}
+
+.char__descr:nth-child(odd) {
+    padding-right: 25px;
+}
+
+.char__img {
+    align-self: center;
+}
+
+/* 4. GALLERY */
+
+.gallery {
+    margin-bottom: 50px;
+}
+
+.slider--second .slick-dots {
+    left: 0;
+    top: 0;
+}
+
+.gallery__img {
+    max-width: 1150px;
+    margin-left: 48px;
+}
+
+/* 5. ORDER */
+
+.order {
+    margin-bottom: 100px;
+}
+
+.form {
+    max-width: 420px;
+}
+
+.form__title {
+    margin-bottom: 41px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.form__text {
+    max-width: 298px;
+    margin-bottom: 29px;
+}
+
+.form__input-name,
+.form__input-tel {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #131313;
+    outline: none;
+}
+
+.form__choice,
+.form__input-name::placeholder,
+.form__input-tel::placeholder {
+    color: #6f6f6f;
+    opacity: 0.5;
+}
+
+.form__choice {
+    margin-bottom: 10px;
+}
+
+.form__label-box {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.form__bike-price {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.order__inner {
+    position: relative;
+}
+
+.form__radio-style {
+    width: 80px;
+    height: 12px;
+    border-radius: 30px;
+}
+
+.form__label + .form__label {
+    margin-left: 23px;
+}
+
+.form__radio-style--grey {
+    background: #6f6f6f;
+}
+
+.form__radio-style--white {
+    background: #fff;
+    border: 1px solid #6f6f6f;
+}
+
+.form__radio-style--red {
+    background: #ff4040;
+}
+
+.form__input-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.form__button {
+    display: inline-block;
+    padding: 28px 60px 28px 81px;
+    border: none;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 22px;
+    text-transform: uppercase;
+    color: #fff;
+
+    background-color: #131313;
+    transition: all 0.3s;
+}
+
+.form__button:hover {
+    background-color: #ff4040;
+}
+
+.form__input-radio:checked + .form__bike-price {
+    display: block;
+}
+
+.form__radio-style:hover {
+    border: 1px solid black;
+}
+
+.form__price {
+    width: 221px;
+    height: 100px;
+    border: 1px solid #ff4040;
+    border-radius: 50%;
+
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    right: 0;
+
+    transform: translate(-37%, 0%);
+}
+
+.form__price::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+
+    width: 221px;
+    height: 100px;
+    border: 1px solid #ff4040;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #131313;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.footer__link {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.footer__link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer__mail-link,
+.footer__tel-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__social .footer__social-link + .footer__social-link {
+    margin-left: 28.33px;
+}
+
+.tel,
+.mail {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+    color: #fff;
+}
+
+.img-tel,
+.img-mail {
+    margin-right: 10px;
+}
+
+.footer__tel-link,
+.footer__mail-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer__tel-link {
+    margin-bottom: 10px;
+}
+
+/* MEDIA  */
+
+@media (max-width: 991px) {
+    .menu {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 630px) {
+    .header__inner {
+        display: block;
+    }
+}
